@@ -1,17 +1,17 @@
- #include "main.h"
-
+#include "main.h"
 /**
- * print_alphabet - print alphabet
- *
- * Return: nothing.
- */
+* print_alphabet - Prints all lowercase letters of the English alphabet
+* Your name
+* Return: 0
+*/
 void print_alphabet(void)
 {
-	char letter;
+char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		_putchar(letter);
-	}
-	_putchar('\n');
+
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
+
+
+_putchar('\n');
 }
