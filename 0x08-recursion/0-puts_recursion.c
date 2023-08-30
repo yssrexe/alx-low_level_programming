@@ -1,4 +1,4 @@
-#include<unistd.h>
+#include "main.h"
 
 void _puts_recursion(char *s)
 {
@@ -6,8 +6,8 @@ void _puts_recursion(char *s)
 
     while(s[i])
     {
-        write(1, &s[i], 1);
+        _putchar(s[i]);
         i++;
     }
-    write(1, "\n", 1);
+    _putchar('\n');
 }
