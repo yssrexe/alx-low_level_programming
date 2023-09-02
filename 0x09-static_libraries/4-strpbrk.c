@@ -1,27 +1,24 @@
-#include "holberton.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
- * _strpbrk - bytes
- * @s: pointer to char
- * @accept: pointer to char
- * Return: NULL
+ * _strpbrk - searches a strings for any of a set bytes
+ * @s: string
+ * @accept: set of bytes
+ * Return: pointer to the first accurrence of any bytes in the s
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-
 	while (*s)
 	{
-		for (i = 0; accept[i]; i++)
+		char *a = accept;
+
+		while (*a)
 		{
-			if (*s == accept[i])
-			{
+			if (*a == *s)
 				return (s);
-			}
+			a++;
 		}
 		s++;
 	}
-	return (NULL);
+	return (0);
 }

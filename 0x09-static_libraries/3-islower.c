@@ -1,18 +1,13 @@
-#include "holberton.h"
 
 /**
- * _islower - check the code for Holberton School students.
- *
- * @c:  is a parameter
- *
- * Return: Always 0.
+ * _islower - check if lower
+ * @c: number
+ * Return: 1 or 0
  */
 
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
+	if (c >= 'a' && c <= 'c')
 		return (1);
-	}
 	return (0);
 }
