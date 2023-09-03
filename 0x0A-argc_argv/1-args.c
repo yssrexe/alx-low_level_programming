@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - program
+ * main - main function
  * @argc: argument count
  * @argv: argument victor
- * return: always return 0
+ * Return: always 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	(void) argv;
 	argc -= 1;
-	printf("%d\n",argc);
-	return(0);
+	printf("%d\n", argc);
+	return (0);
 }
