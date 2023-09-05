@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - function to str concat ...
+ * _strdup - function to str concat ...
  * @str: string
  * Return: 0
  */
