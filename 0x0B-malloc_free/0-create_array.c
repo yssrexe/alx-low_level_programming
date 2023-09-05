@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdlib.h>
+
 /**
  * create_array - create an array function
  * @size: size of carracters ...
@@ -18,10 +18,8 @@ char *create_array(unsigned int size, char c)
 	if (!p)
 		return (NULL);
 
-	while (size > 0)
-	{
+	while (size-- > 0)
 		*(p + size) = c;
-		size--;
-	}
+
 	return (0);
 }
