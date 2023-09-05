@@ -26,7 +26,7 @@ char *_strdup(char *str)
 
 	while (str[i])
 	{
-		copy[i] = str[i};
+		copy[i] = str[i];
 		i++;
 	}
 	return (copy);
