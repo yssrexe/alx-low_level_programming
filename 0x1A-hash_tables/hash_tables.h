@@ -1,4 +1,4 @@
- #ifndef H
+#ifndef H
 #define H
 
 #include <stdbool.h>
